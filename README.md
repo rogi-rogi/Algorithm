@@ -1,19 +1,12 @@
-# 📆 Problem_Solving
+# ⚡Algorithm
 
-Daily Problem Solving Challenges
-
-<br><hr/>
-
-### 🧑‍💻 Profile
-
-+ [Baekjoon Online Judge](https://www.acmicpc.net/user/polygon)
-+ [Solved.ac](https://solved.ac/profile/polygon)
+Study Algorithm
 
 <br><hr/>
 
 ### 🗂️ Directory
 
-+ BOJ (Baekjoon Online Judge)
++ 
 
 <br><hr/>
 
@@ -25,4 +18,5 @@ Daily Problem Solving Challenges
 
 ### ⚙️ etc...
 
-https://github.com/rogi-rogi/BOJ 의 코드를 이곳으로 옮기는 중이며, 전부 옮겨지면 이전 저장소는 삭제됩니다.
+> https://github.com/rogi-rogi/Problem_Solving/tree/main/Algorithm 의 코드를 이곳으로 옮길 예정입니다.
+> 
