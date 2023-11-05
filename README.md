@@ -5,6 +5,9 @@ Study Algorithm
 <br><hr/>
 
 ### 🗂️ Directory
++ DP
+  + Knapsack
+    + 0-1 Knapsack
 
 <br><hr/>
 
@@ -17,8 +20,8 @@ Study Algorithm
 + Brute Force
 + Greedy
 + Graph
-+ DP(Dynamic Programmic)
-  + Knapsack Problem
++ DP(Dynamic Programming)
+  + Knapsack
     + Fractional Knapsack
     + 0-1 Knapsack
 + Sorting
