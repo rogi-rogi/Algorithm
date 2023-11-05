@@ -6,6 +6,22 @@ Study Algorithm
 
 ### 🗂️ Directory
 
+<br><hr/>
+
+### 📚 Category
++ Implementation
++ Data Structures
+  + Stack
+  + Queue
+  + Tree
++ Brute Force
++ Greedy
++ Graph
++ DP(Dynamic Programmic)
+  + Knapsack Problem
+    + Fractional Knapsack
+    + 0-1 Knapsack
++ Sorting
 + 
 
 <br><hr/>
