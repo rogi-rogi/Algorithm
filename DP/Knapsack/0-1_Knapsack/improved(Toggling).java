@@ -1,3 +1,9 @@
+/*
+[PS] https://www.acmicpc.net/problem/12865
+공간복잡도 : O(W)
+시간복잡도 : O(NW)
+*/
+
 import java.io.*;
 import java.util.*;
 
