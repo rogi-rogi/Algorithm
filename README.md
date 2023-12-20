@@ -1,17 +1,14 @@
 # ⚡Algorithm
 
-Study Algorithm
+📚Study Algorithm
 
 <br><hr/>
 
-### 🗂️ Directory
-+ DP
-  + Knapsack
-    + 0-1 Knapsack
-
-<br><hr/>
-
-### 📚 Category
+### 🗂️ Category
++ 00_Default
+  + Swap
+  + Fast I/O
++ 01_Sorting
 + Implementation
 + Data Structures
   + Stack
@@ -24,8 +21,8 @@ Study Algorithm
   + Knapsack
     + Fractional Knapsack
     + 0-1 Knapsack
-+ Sorting
-+ 
+
+
 
 <br><hr/>
 
