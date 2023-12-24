@@ -6,8 +6,8 @@
 
 ### 🗂️ Category
 + 00_Default
-  + Swap
-  + Fast I/O
+  + swap
+  + fast I/O
 + 01_Sorting
 + Implementation
 + Data Structures
