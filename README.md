@@ -5,20 +5,19 @@
 <br><hr/>
 
 ### 🗂️ Category
-+ 00_Default
++ 00-Default
   + swap
   + fast in-out
-+ 01_Sorting
-+ Implementation
-+ Data Structures
++ 01-Sorting
++ 02-Data Structures
   + Stack
   + Queue
   + Tree
-+ Brute Force
-+ Greedy
-+ Graph
++ 03-Brute Force
++ 04-Greedy
++ 05-Graph
   + Dijkstra
-+ DP(Dynamic Programming)
++ 06-DP
   + Knapsack
     + Fractional Knapsack
     + 0-1 Knapsack
