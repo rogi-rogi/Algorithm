@@ -17,6 +17,7 @@
 + Brute Force
 + Greedy
 + Graph
+  + Dijkstra
 + DP(Dynamic Programming)
   + Knapsack
     + Fractional Knapsack
