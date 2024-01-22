@@ -9,7 +9,7 @@ def Dijkstra(v) : # start Vertex
     pq = [(0, v)]
     while pq :
         w, v = heappop(pq)
-        if dist[v] < w : continue # distance previously calculated is shorter
+        if dist[v] < w : continue
         # for nv, nw in edges[v] :
         for nv, nw in edges[v].items() : 
             nw += w
