@@ -34,11 +34,11 @@ from math import inf
 3. 시작 정점의 인접한 정점을 탐색하기 위해 우선순위 큐에 시작 정점의 거리와 번호 삽입
 
 ```python
-def dijkstra(v) :
+def dijkstra(v, SIZE) :
   # I. 초기 설정
-  dist = [inf] * (V + 1) # I-1
-  dist[v] = 0            # I-2
-  pq = [(0, v)]          # I-3
+  dist = [inf] * (SIZE + 1) # I-1
+  dist[v] = 0               # I-2
+  pq = [(0, v)]             # I-3
 ```
 
 <br>
