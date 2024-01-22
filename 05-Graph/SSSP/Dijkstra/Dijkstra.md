@@ -86,8 +86,8 @@ def dijkstra(v) :
 from heapq import heappop, heappush
 from math import inf
 
-def dijkstra(v) :
-    dist = [inf] * (V + 1)
+def dijkstra(v, SIZE) :
+    dist = [inf] * (SIZE + 1)
     dist[v] = 0
     pq = [(0, v)]
     while pq :
