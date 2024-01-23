@@ -140,6 +140,7 @@ def dijkstra_original(v, SIZE) :
             v = i
       if min_dist == inf : break                     # II-2
 ```
+<br>
 
 ### III. 최단거리 갱신
 
