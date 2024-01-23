@@ -6,7 +6,6 @@ def dijkstra_original(v, SIZE) :
     dist = [inf] * (SIZE + 1)
     visited = [False] * (SIZE + 1)
     dist[v] = 0
-    visited[v] = True
     while True :
         min_dist = inf
         for i in range(1, SIZE + 1) :
