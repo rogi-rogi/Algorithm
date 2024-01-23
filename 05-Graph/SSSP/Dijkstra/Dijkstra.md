@@ -1,6 +1,6 @@
 # Dijkstra
 
-Dijkstra는 SSSP를 위한 그래프 탐색 알고리즘이다. 네덜란드의 Edsgar W. Dijkstra의 이름을 따서 지은 영어식 표기이다.
+```Dijkstra```는 SSSP를 위한 그래프 탐색 알고리즘이다. 네덜란드의 Edsgar W. Dijkstra의 이름을 따서 지은 영어식 표기이다.
 
 정확한 발음은 ```데이크스트라``` 이다.
 
@@ -25,9 +25,6 @@ BFS처럼 시작 정점으로부터 다른 모든 정점에 대한 최단 거리
 ```일반적인 그래프```의 경우 $E \le V^2$이면 우선순위 큐에 요소 삽입/삭제가 $O(log_2 V)$안에 이루어지고, 최단거리를 더 이상 갱신하지 못하는 $E - V$개의 간선들은 전부 무시될 것이기 때문에 $O(E\log_2 E) = O(E\log_2 V)$가 된다.
 
 정점의 수가 적거나 간선의 수가 매우 많은 경우에는 우선순위 큐를 사용하지 않는 [다른 방식]()으로 구현하는 것이 효율적이다. $= O(V^2 + E)$
-
-   
-
 
 <br>
 
@@ -100,23 +97,66 @@ def dijkstra(v) :
 
 <br>
 
-### 전체 코드
-```python
-from heapq import heappop, heappush
-from math import inf
+### [전체 코드](https://github.com/rogi-rogi/Algorithm/blob/main/05-Graph/SSSP/Dijkstra/dijkstra.py)
 
-def dijkstra(v, SIZE) :
-    dist = [inf] * (SIZE + 1)
-    dist[v] = 0
-    pq = [(0, v)]
-    while pq :
-        w, v = heappop(pq)
-        if dist[v] < w : continue
-        # for nv, nw in edges[v] :
-        for nv, nw in edges[v].items() : 
-            nw += w
-            if nw < dist[nv] :
-                dist[nv] = nw
-                heappush(pq, (nw, nv))
-    return dist
+<hr><br>
+
+# Dijkstra(original ver)
+
+이전에 설명한 ```Dijkstra```는 ```일반적인 그래프``` 즉, $E \le V^2$에 대해 우선순위 큐를 사용한 변형 버전이다.
+
+정점의 수가 적거나 간선의 수가 매우 많은 경우에 더 빠르게 작동할 수 있는 변형 버전에 대해 알아보자. $= O(V^2 + E)$
+
+## 👨‍🔧 구현
+
+### I. 초기 설정
+1. 정점의 방문 여부를 표시할 ```visited```, 최단 거리를 기록할 ```dist``` 배열 선언
+2. 시작 정점의 최단 거리를 0으로 설정
+
+```python
+def dijkstra_original(v, SIZE) :
+   # I. 초기 설정
+   dist = [inf] * (SIZE + 1)       # I-1
+   visited = [False] * (SIZE + 1)
+   dist[v] = 0                     # I-2
 ```
+
+<br>
+
+### II. 인접 정점 탐색
+
+1. 방문하지 않은 정점 중 최단거리 정점 탐색
+2. 만약 방문한 정점이 없다면 탐색 종료
+   
+```python
+def dijkstra_original(v, SIZE) :
+   # I. 초기 설정
+   # II. 인접 정점 탐색
+   while True :
+      min_dist = inf
+      for i in range(1, SIZE + 1) :
+         if dist[i] < min_dist and not visited[i] :  # II-1
+            min_dist = dist[i]
+            v = i
+      if min_dist == inf : break                     # II-2
+```
+
+### III. 최단거리 갱신
+
+1. 탐색 정점 방문 표시
+2. 이미 방문한 정점은 무시
+3. 탐색 정점의 인접 정점에 대한 최단거리 갱신
+4. 최단거리 배열 반환
+
+```python
+def dijkstra_original(v, SIZE) :
+   # I. 초기 설정
+   # II. 인접 정점 탐색
+      visited[v] = True                            # III-1
+      for nv, nw in graph[v] :
+         if visited[nv] : continue                 # III-2
+         dist[nv] = min(dist[nv], nw + dist[v])    # III-3
+   return dist                                     # III-4
+```
+
+### [전체 코드](https://github.com/rogi-rogi/Algorithm/blob/main/05-Graph/SSSP/Dijkstra/dijkstra_original.py)
