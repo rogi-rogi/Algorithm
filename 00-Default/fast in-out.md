@@ -1,7 +1,7 @@
 # fast Input-Output
 PS에 자주 사용되는 빠른 입/출력에 대해 알아봅시다.
 
-<hr>
+<br>
 
 ## C
   
@@ -43,40 +43,56 @@ int main()
 
 ### stream auto flush 비활성화
 
-```cin```, ```cout```의 두 stream은 기본적으로 동기화 되어있기 때문에, 
+```cin```, ```cout```의 두 stream은 기본적으로 동기화 되어있기 때문에, 다른 stream 작업시 자동으로 flush를 한다.
 
+```cin.tie(nullptr)```, ```cout.tie(nullptr)```을 사용해 해당 스트림 호출시 다른 스트림의 buffer를 flush하는 기능을 비활성화할 수 있다.
 
-  
+auto flush를 비활성화 할 경우, 아래와 같이 출력 후 입력을 받을 때 입력을 먼저 받는 경우가 발생할 수 있다.
 ```cpp
-ios_base::sync_with_stdio(false);
-cin.tie(nullptr);
+cout << "Input:";
+cin >> value;
 ```
 
+대부분의 PS에서는 많은 입력에 대헌 계산을 수행하고 출력을 하므로 결과가 나오기만 하면 된다. 빈번하게 flush할 필요가 없다. 
+
+```cpp
+int main()
+{
+  ios_base::sync_with_stdio(false);
+  cin.tie(nullptr);
+  cout.tie(nullptr);
+}
+
+```
 
 <br>
 
+### ```endl``` auto flush 대체
+
+줄바꿈을 할 때, ```endl```을 사용하면 마찬가지로 자동으로 flush된다.
+대신 ```'\n'```을 사용하자.
+
+<br>
 
 ## Java
-```java
-  // 기본
-  public static void main(String[] args) {
-    Scanner sc = new Scanner(System.in);
-  }
-  
-  //
-  public static void main(String[] args) throws IOException {
-    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    StringBuilder sb = new StringBuilder();
-    // Input
-    br.readLine();
-  }
-```
 
-+ Python
-  ```python
-  from sys import stdin
-  input = stdin.readline
-  ```
+```java
+// 기본
+public static void main(String[] args) throws IOException {
+  BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+  StringBuilder sb = new StringBuilder();
+  // Input
+  br.readLine();
+}
+```
+<br>
+
+##Python
+
+```python
+from sys import stdin
+input = stdin.readline
+```
 
 <hr>
 
