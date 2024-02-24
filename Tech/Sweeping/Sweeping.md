@@ -22,9 +22,8 @@
 주로 ```라인 스위핑(Line Sweeping)```, ```평면 스위핑(Plane Sweeping)```으로 분류된다.
 
  + ```Line Sweeping``` : 일직선 상의 선분을 처리하는데 사용된다.
-
-   👉 [BOJ 2170 : 선 긋기](https://www.acmicpc.net/problem/2170)
-   ✅ [정답 코드](https://github.com/rogi-rogi/problem-solving/blob/main/Baekjoon%20Online%20Judge/normal/02170.py)
+   + 👉 [BOJ 2170 : 선 긋기](https://www.acmicpc.net/problem/2170)
+   + ✅ [정답 코드](https://github.com/rogi-rogi/problem-solving/blob/main/Baekjoon%20Online%20Judge/normal/02170.py)
    
  + ```Plane Sweeping``` : 평면 상에서 여러 도형을 처리하는데 사용된다.
 
