@@ -1,13 +1,14 @@
-# fast Input-Output
+# 💡Fast Input-Output
+
 PS에 자주 사용되는 빠른 입/출력에 대해 알아봅시다.
 
-<br>
+<br><hr>
 
 ## C
   
 ```<stdio.h>```의 ```printf()```, ```scanf()```는 충분히 빠릅니다.
   
-<br>
+<br><hr>
 
 ## C++
 
@@ -72,7 +73,8 @@ int main()
 줄바꿈을 할 때, ```endl```을 사용하면 마찬가지로 자동으로 flush된다.
 대신 ```'\n'```을 사용하자.
 
-<br>
+<br><hr>
+
 
 ## Java
 
@@ -85,9 +87,9 @@ public static void main(String[] args) throws IOException {
   br.readLine();
 }
 ```
-<br>
+<br><hr>
 
-##Python
+## Python
 
 ```python
 from sys import stdin
