@@ -11,7 +11,6 @@
   + Stack
   + Queue
   + Tree
-+ Brute Force
 + Greedy
 + Graph
   + Dijkstra
@@ -21,9 +20,10 @@
     + 0-1 Knapsack
 + Tech
   + swap
-  + fast in-out
+  + Fast I/O
   + Sweeping
-  + Two-Pointers
+  + Two Pointers
+  + Brute Force
 
 
 
