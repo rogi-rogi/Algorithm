@@ -15,7 +15,7 @@
 + Graph
   + Dijkstra
 + DP
-  + Knapsack
+  + Knapsac
     + Fractional Knapsack
     + 0-1 Knapsack
 + Tech
@@ -24,7 +24,7 @@
   + Sweeping
   + Two Pointers
   + Brute Force
-
++
 
 
 <br><hr/>
