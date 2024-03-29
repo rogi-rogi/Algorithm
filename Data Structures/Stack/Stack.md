@@ -23,17 +23,35 @@ Stack의 기능과 시간복잡도, 각 PL마다 사용하는 방법에 대해 �
 
 Python은 ```List```를 Stack처럼 사용할 수 있습니다.
 
-```Python
-  stack = []
-  stack.append(1)    # stack에 1추가 = push
-  stack.append(2)    # stack에 2추가 = push
-  print(stack.pop()) # 2, stack의 마지막 요소 반환 및 삭제 = pop
-  stack.append(3)    # stack에 3추가
-  print(stack)       # [1, 3]
-  print(len(stack))  # 2, stack의 요소 갯수 반환, 0일 경우 empty()와 동일
-  print(stack[-1])   # 1, stack의 마지막 요소 반환 = top
-```
-
++ INIT 
+  ```Python
+    stack = []
+  ```
++ PUSH
+  ```Python
+    stack.append(1)    # [1]
+    stack.append(3)    # [1, 3]
+    stack.append(2)    # [1, 3, 2]
+  ```
++ POP
+  ```Python
+    print(stack.pop()) # [1, 3]
+    # >>> 2
+  ```
++ TOP
+  ```Python
+    print(stack[-1])
+    # >>> 3
+  ```
++ EMPTY
+  ```Python
+    print(len(stack))
+    # >>> 2
+    if stack: # len(stack) > 0
+      print("NOT EMPTY")
+    else:
+      print("EMPTY")
+  ```
 ### C++
 
 ### Java
