@@ -18,7 +18,7 @@ Pull Request를 통해 여러분의 지식을 공유해주세요!
 
 <br>
 
-### 🗂️ Category
+## 🗂️ Category
 
 + Sorting
 + Data Structures
