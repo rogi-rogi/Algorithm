@@ -21,6 +21,10 @@ Pull Request를 통해 여러분의 지식을 공유해주세요!
 ## 🗂️ Category
 
 + Sorting
++ Math
+  + Number Theory
+    + Prime Number
+      + Sieve of Eratosthenes
 + Data Structures
   + Stack
   + Queue
