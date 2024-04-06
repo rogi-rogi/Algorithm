@@ -50,4 +50,4 @@ def eratosthenes(N):
 ## 전체 코드
 
 + [Python](https://github.com/rogi-rogi/Algorithm/blob/main/Math/Number%20Theory/Prime%20Number/Sieve%20of%20Eratosthenes/sieve_of_eratosthenes.py)
-
++ [Java](https://github.com/rogi-rogi/Algorithm/blob/main/Math/Number%20Theory/Prime%20Number/Sieve%20of%20Eratosthenes/sieveOfEratosthenes.java)
