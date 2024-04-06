@@ -1,4 +1,4 @@
-def eratosthenes(N):
+def sieve_of_eratosthenes(N):
     NOT_PRIME = False
     prime_list = [True] * (N + 1)
     prime_list[0] = prime_list[1] = NOT_PRIME
