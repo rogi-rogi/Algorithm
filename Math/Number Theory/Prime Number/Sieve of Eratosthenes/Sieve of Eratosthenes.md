@@ -30,9 +30,9 @@ def eratosthenes(N):
 
 ```python
     for p in range(2, N + 1):
-        for j in range(p * 2, N + 1, p):
-            if prime_list[j]:
-                prime_list[j] = NOT_PRIME
+        for i in range(p * 2, N + 1, p):
+            if prime_list[i]:
+                prime_list[i] = NOT_PRIME
     return prime_list
 ```
 
@@ -45,16 +45,5 @@ def eratosthenes(N):
 
 따라서, 2부터 $\sqrt N$이하의 수들에 대해서만 배수를 지워도 N이하의 소수를 얻기에 충분하다.
 
-```python
-def eratosthenes(N):
-    NOT_PRIME = False
-    prime_list = [True] * (N + 1)
-    prime_list[0] = prime_list[1] = NOT_PRIME
-    p = 2
-    while p * p <= N:
-        for j in range(p*p, N+1, p):
-            if prime_list[j]:
-                prime_list[j] = NOT_PRIME
-        p += 1
-    return prime_list
-```
+[Python](https://github.com/rogi-rogi/Algorithm/blob/main/Math/Number%20Theory/Prime%20Number/Sieve%20of%20Eratosthenes/sieve_of_eratosthenes.py)
+
