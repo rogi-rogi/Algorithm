@@ -4,8 +4,8 @@ def eratosthenes(N):
     prime_list[0] = prime_list[1] = NOT_PRIME
     p = 2
     while p * p <= N:
-        for j in range(p*p, N+1, p):
-            if prime_list[j]:
-                prime_list[j] = NOT_PRIME
+        for i in range(p*p, N+1, p):
+            if prime_list[i]:
+                prime_list[i] = NOT_PRIME
         p += 1
     return prime_list
