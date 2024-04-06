@@ -45,5 +45,9 @@ def eratosthenes(N):
 
 따라서, 2부터 $\sqrt N$이하의 수들에 대해서만 배수를 지워도 N이하의 소수를 얻기에 충분하다.
 
-[Python](https://github.com/rogi-rogi/Algorithm/blob/main/Math/Number%20Theory/Prime%20Number/Sieve%20of%20Eratosthenes/sieve_of_eratosthenes.py)
+<br>
+
+## 전체 코드
+
++ [Python](https://github.com/rogi-rogi/Algorithm/blob/main/Math/Number%20Theory/Prime%20Number/Sieve%20of%20Eratosthenes/sieve_of_eratosthenes.py)
 
