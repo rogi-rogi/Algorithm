@@ -6,5 +6,5 @@ def permutation(arr, visited, cnt):
         if not visited[i]:
             visited[i] = True
             arr[cnt] = i
-            permutation(arr, visited, cnt + 1, N)
+            permutation(arr, visited, cnt + 1)
             visited[i] = False
