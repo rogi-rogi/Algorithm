@@ -63,7 +63,7 @@ i ≥ 2일 때, 아래와 같이 원소의 최소공배수(lcm)을 구해주자.
 print(res)
 ```
 
-[전체코드](https://github.com/rogi-rogi/problem-solving/blob/main/Baekjoon%20Online%20Judge/normal/17436.py)
+### [전체코드](https://github.com/rogi-rogi/problem-solving/blob/main/Baekjoon%20Online%20Judge/normal/17436.py)
 
 
 <br>
