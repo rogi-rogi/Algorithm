@@ -42,22 +42,22 @@ i = 1일 때, 1개의 집합 원소의 개수는 그냥 더해주면 된다.
 i ≥ 2일 때, 아래와 같이 원소의 최소공배수(lcm)을 구해주자.
 
 ```python
-    lcm = 1
-    for p in comb:
-        lcm *= p
-        if lcm > M: # M보다 큰 lcm에 대해서는 무시한다.
-            break
-    else:
+        lcm = 1
+        for p in comb:
+            lcm *= p
+            if lcm > M: # M보다 큰 lcm에 대해서는 무시한다.
+                break
+        else:
 ```
 
 이제 M을 원소의 최소 공배수(lcm)으로 나눈 소수의 배수들을 집합의 원소 갯수(i)에 따라 합집합 원소의 수에 더하거나 빼면 된다.
 
 *이 부분에서 포함 배제의 원리가 적용된다.*
 ```python
-        if i % 2 == 1:
-            res += M // lcm
-        else:
-            res -= M // lcm
+            if i % 2 == 1:
+                res += M // lcm
+            else:
+                res -= M // lcm
 
 # Output
 print(res)
