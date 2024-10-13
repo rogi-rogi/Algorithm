@@ -131,4 +131,4 @@ def binary_search(arr, target):
 
 <br>
 
-# [전체 코드]()
+# [전체 코드](https://github.com/rogi-rogi/Algorithm/blob/main/Binary%20Search/binary_search.py)
