@@ -9,6 +9,9 @@
 - $u \times v = 0$: 일직선(collinear)
 - $u \times v < 0$: 시계(CW, clockwise)
 
+
+[블로그 글 보기](https://kyr-db.tistory.com/1069)
+
 <br/>
 
 # 동작 원리
@@ -103,6 +106,4 @@ long acy = a.y - c.y;
 
 ### 기본 문제
 
-CCW로 세 점 A, B, C의 회전 방향을 판별하는 기본 문제입니다.
-
-http://boj.ma/11758
+- [BOJ 11758 - CCW](http://boj.ma/11758): CCW로 세 점 A, B, C의 회전 방향을 판별하는 기본 문제입니다.
